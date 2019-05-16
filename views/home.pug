@@ -1,0 +1,7 @@
+extends layouts/main_layout.pug
+block content
+    h2 Welcome
+    ul
+        each news in allNews
+            li
+                a(href="/news/" + news.id) #{news.title}
